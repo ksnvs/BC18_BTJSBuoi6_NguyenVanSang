@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Bài Tập 1: Tìm số Nguyên Dương Nhỏ Nhất 1+2+...+n>10000 -->
+    <section style="margin: 50px 0">
+      <div class="container" style="text-align: center">
+        <h3>Bài tập 1: Tìm số nguyên dương nhỏ nhất</h3>
+        <p>1 + 2 +...+ n > 10000</p>
+        <button onclick="timSoNguyenDuongNhoNhat()" class="btn btn-success">
+          Tìm số
+        </button>
+        <div id="ketQua1" style="margin-top: 20px"></div>
+      </div>
+    </section>
+    <!-- Bài Tập 2: Tính tổng lũy thừa với 2 số x, n nhập vào -->
+    <section style="margin: 50px 0">
+      <div class="container" style="text-align: center">
+        <h3>Bài tập 2: Tính tổng lũy thừa với 2 số x, n nhập vào</h3>
+        <p>S(n) = x + x^2 + x^3 +...+ x^n</p>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Số X</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập số X"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            id="txtSoX"
+          />
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Số n</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập số n"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            id="txtSoN"
+          />
+        </div>
+        <button onclick="tinhTongLuyThua()" class="btn btn-success">
+          Tính tổng
+        </button>
+        <div id="ketQua2" style="margin-top: 20px"></div>
+      </div>
+    </section>
+    <!-- Bài Tập 3: Tính giai thừa từ n nhập vào -->
+    <section style="margin: 50px 0">
+      <div class="container" style="text-align: center">
+        <h3>Bài tập 3: Tính giai thừa từ n nhập vào</h3>
+        <p>GT = 1*2*3...*n</p>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Số n</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập số n"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            id="txtBt3SoN"
+          />
+        </div>
+        <button onclick="tinhGiaiThua()" class="btn btn-success">
+          Tính giai thừa
+        </button>
+        <div id="ketQua3" style="margin-top: 20px"></div>
+      </div>
+    </section>
+    <!-- Bài Tập 4: In ra 10 thẻ div với background theo màu-->
+    <section style="margin: 50px 0">
+      <div class="container" style="text-align: center">
+        <h3>Bài Tập 4: In ra 10 thẻ div với background theo màu</h3>
+        <p>Vị trí chẵn màu đỏ, lẻ màu xanh</p>
+
+        <button onclick="inTheDiv()" class="btn btn-success">In thẻ</button>
+        <div id="ketQua4" style="margin-top: 20px"></div>
+      </div>
+    </section>
+    <!-- Bài Tập 5: In ra các số nguyên tố từ 1 đến n -->
+    <section style="margin: 50px 0">
+      <div class="container" style="text-align: center">
+        <h3>Bài tập 5: In ra các số nguyên tố từ 1 đến số nhập vào</h3>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Số nguyên</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập vào số nguyên "
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            id="txtSoNguyen"
+          />
+        </div>
+        <button onclick="inSoNguyenTo()" class="btn btn-success">
+          In Số Nguyên Tố
+        </button>
+        <div id="ketQua5" style="margin-top: 20px"></div>
+      </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./baiTap1.js"></script>
+    <script src="./baiTap2.js"></script>
+    <script src="./baiTap3.js"></script>
+    <script src="./baiTap4.js"></script>
+    <script src="./baiTap5.js"></script>
+  </body>
+</html>
